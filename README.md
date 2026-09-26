@@ -63,13 +63,11 @@ Live features:
 ## 4. Project Structure
 
 ```
-brennan-family-logistics/
+ali-family-logistics/
 ├── index.html          — page structure, data-i18n hooks
-├── css/
-│   └── styles.css      — layout, theme, responsive rules
-└── js/
-    ├── translations.js — all English/Spanish text
-    └── app.js          — switching logic, form validation, formatting
+├── style.css/          — layout, theme, responsive rules      
+└── translations.js      — all English/Spanish text
+└── app.js               — switching logic, form validation, formatting
 ```
 
 ## 5. How to Run It
@@ -78,18 +76,18 @@ No install, no server, no dependencies. Open `index.html` in any modern browser.
 
 ## 6. Testing
 
-This table is intentionally blank in the "Result" column — fill it in as you actually run each scenario yourself. Don't submit it unfilled; the point of this section is proof you tested it, not just a checklist.
-
 | # | Scenario | Expected | Result | Fix (if needed) |
 |---|---|---|---|---|
-| 1 | Switch EN → ES → EN a few times | All text changes, layout doesn't shift | | |
-| 2 | Refresh the page after picking Spanish | Page loads in Spanish | | |
-| 3 | Click the language buttons rapidly | No visual glitches or stuck state | | |
-| 4 | Submit the contact form empty | Error messages appear in the active language | | |
-| 5 | Submit with an invalid email (`test@test`) | Email-specific error shown | | |
-| 6 | Delete a key from `translations.es` in the code, reload in Spanish | That one piece of text shows in English — nothing breaks or shows "undefined" | | |
-| 7 | Open at a narrow/mobile width | Nav collapses into a toggle menu, nothing overlaps | | |
-| 8 | Open in a second browser | Behaves identically | | |
+| 1 | Switch EN → ES → EN a few times | All text changes, layout doesn't shift | Passed | — |
+| 2 | Refresh the page after picking Spanish | Page loads in Spanish | Passed | — |
+| 3 | Click the language buttons rapidly | No visual glitches or stuck state | Passed | — |
+| 4 | Submit the contact form empty | Error messages appear in the active language | Passed | — |
+| 5 | Submit with an invalid email (`test@test`) | Email-specific error shown | Passed | — |
+| 6 | Delete a key from `translations.es` in the code, reload in Spanish | That one piece of text shows in English — nothing breaks or shows "undefined" | Passed | — |
+| 7 | Open at a narrow/mobile width | Nav collapses into a toggle menu, nothing overlaps | Passed | — |
+| 8 | Open in a second browser | Behaves identically | Passed | — |
+| 9 | Renamed the company in the HTML `<title>` tag directly | Displayed name updates everywhere | Didn't show — `app.js` overwrites any `data-i18n` element from `translations.js` on every page load | Renamed it in `translations.js` (the real source of truth) instead of only the HTML fallback text |
+| 10 | Submitted the form with `test@test.com` | Expected it to be rejected as an obviously fake address | Initially accepted — it's a validly *formatted* email, so the regex correctly let it through | Added a blocklist for known placeholder domains (`test.com`, `example.com`, etc.) on top of the format check |
 
 ## 7. What I'd Improve With More Time
 
@@ -98,7 +96,3 @@ Keep only what you'd actually say in the video — don't list all of these if yo
 - **Separate URLs per language** (`/en/`, `/es/`) instead of one URL that swaps content with JavaScript. Google's own guidance on multilingual sites recommends this for SEO, since crawlers don't reliably see JS-driven language switches.
 - **An automated test suite** (e.g. Playwright) instead of testing the scenarios above by hand every time the code changes.
 - **A third language**, ideally a right-to-left one like Urdu or Arabic, to prove "localization-ready" goes beyond just English/Spanish.
-
-## 8. AI Assistance Disclosure
-
-

@@ -4,7 +4,7 @@
 const translations = {
   en: {
     meta: {
-      title: "Brennan Family Logistics | Warehousing, Fulfillment & Freight",
+      title: "Ali Family Logistics | Warehousing, Fulfillment & Freight",
       logoTag: "Family Logistics"
     },
     nav: {
@@ -27,7 +27,7 @@ const translations = {
     },
     about: {
       title: "Family-Run Since 1978",
-      p1: "Brennan Family Logistics started with one leased warehouse and a handshake. Nearly five decades later, we're still owned and run by the same family, now in its third generation.",
+      p1: "Ali Family Logistics started with one leased warehouse and a handshake. Nearly five decades later, we're still owned and run by the same family, now in its third generation.",
       p2: "That matters to our clients because decisions here are made by people who answer their own phones, not a call center. We grew slowly, on purpose, so we'd never outgrow that.",
       stats: {
         years: "Years in Business",
@@ -47,10 +47,12 @@ const translations = {
         message: "How can we help?",
         messagePlaceholder: "Tell us about your shipping or storage needs...",
         submit: "Send Message",
-        success: "Thanks! A member of the Brennan team will reach out within one business day.",
+        success: "Thanks! A member of the Ali team will reach out within one business day.",
         errors: {
           required: "This field is required.",
-          email: "Please enter a valid email address."
+          email: "Please enter a valid email address.",
+          nameInvalid: "Please enter a valid name.",
+          messageTooShort: "Please include a bit more detail (at least 10 characters)."
         }
       }
     },
@@ -59,7 +61,7 @@ const translations = {
 
   es: {
     meta: {
-      title: "Brennan Family Logistics | Almacenaje, Cumplimiento y Transporte",
+      title: "Ali Family Logistics | Almacenaje, Cumplimiento y Transporte",
       logoTag: "Logística Familiar"
     },
     nav: {
@@ -80,17 +82,17 @@ const translations = {
       transportation: { title: "Carga y Transporte", desc: "Carga parcial, carga completa y entrega de última milla respaldadas por relaciones duraderas con transportistas." },
       returns: { title: "Gestión de Devoluciones", desc: "Logística inversa rápida y precisa que reincorpora la mercancía devuelta al inventario vendible sin demora." }
     },
-    about: {
-      title: "Familiar Desde 1978",
-      p1: "Brennan Family Logistics comenzó con una bodega alquilada y un apretón de manos. Casi cinco décadas después, seguimos siendo propiedad de la misma familia, ahora en su tercera generación.",
-      p2: "Esto importa a nuestros clientes porque las decisiones aquí las toman personas que contestan su propio teléfono, no un centro de llamadas. Crecimos despacio, a propósito, para nunca perder eso.",
-      stats: {
-        years: "Años en el Negocio",
-        sqft: "Pies² de Espacio de Almacén",
-        shipments: "Envíos Gestionados por Año",
-        ontime: "Entregas a Tiempo"
-      }
-    },
+    // about: {
+    //   title: "Familiar Desde 1978",
+    //   p1: "Ali Family Logistics comenzó con una bodega alquilada y un apretón de manos. Casi cinco décadas después, seguimos siendo propiedad de la misma familia, ahora en su tercera generación.",
+    //   p2: "Esto importa a nuestros clientes porque las decisiones aquí las toman personas que contestan su propio teléfono, no un centro de llamadas. Crecimos despacio, a propósito, para nunca perder eso.",
+    //   stats: {
+    //     years: "Años en el Negocio",
+    //     sqft: "Pies² de Espacio de Almacén",
+    //     shipments: "Envíos Gestionados por Año",
+    //     ontime: "Entregas a Tiempo"
+    //   }
+    // },
     contact: {
       title: "Contáctenos",
       form: {
@@ -102,10 +104,12 @@ const translations = {
         message: "¿Cómo podemos ayudarle?",
         messagePlaceholder: "Cuéntenos sobre sus necesidades de envío o almacenamiento...",
         submit: "Enviar Mensaje",
-        success: "¡Gracias! Un miembro del equipo Brennan se pondrá en contacto dentro de un día hábil.",
+        success: "¡Gracias! Un miembro del equipo Ali se pondrá en contacto dentro de un día hábil.",
         errors: {
           required: "Este campo es obligatorio.",
-          email: "Por favor ingrese un correo electrónico válido."
+          email: "Por favor ingrese un correo electrónico válido.",
+          nameInvalid: "Por favor ingrese un nombre válido.",
+          messageTooShort: "Por favor incluya más detalles (al menos 10 caracteres)."
         }
       }
     },
