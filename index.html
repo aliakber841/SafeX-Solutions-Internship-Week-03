@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-i18n="meta.title">Ali Family Logistics | Warehousing, Fulfillment &amp; Freight</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#home" class="logo">Ali<span data-i18n="meta.logoTag">Family Logistics</span></a>
+    <nav class="nav" id="primaryNav">
+      <a href="#home" data-i18n="nav.home">Home</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#about" data-i18n="nav.about">About Us</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language selector">
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="container">
+    <h1 data-i18n="hero.title">Your Freight. Our Family's Word.</h1>
+    <p data-i18n="hero.subtitle">Three generations of hands-on warehousing, order fulfillment, and freight management for businesses that want a partner, not just a vendor.</p>
+    <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">Request a Quote</a>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <div class="container">
+    <h2 data-i18n="services.title">What We Do</h2>
+    <div class="grid">
+      <div class="card">
+        <h3 data-i18n="services.warehousing.title">Warehousing &amp; Storage</h3>
+        <p data-i18n="services.warehousing.desc">Secure, climate-aware storage with real-time inventory visibility across every pallet and SKU.</p>
+      </div>
+      <div class="card">
+        <h3 data-i18n="services.fulfillment.title">Order Fulfillment</h3>
+        <p data-i18n="services.fulfillment.desc">Pick, pack, and ship for e-commerce and B2B orders, with same-day cutoffs on most routes.</p>
+      </div>
+      <div class="card">
+        <h3 data-i18n="services.transportation.title">Freight &amp; Transportation</h3>
+        <p data-i18n="services.transportation.desc">LTL, truckload, and last-mile delivery backed by long-standing carrier relationships.</p>
+      </div>
+      <div class="card">
+        <h3 data-i18n="services.returns.title">Returns Management</h3>
+        <p data-i18n="services.returns.desc">Fast, accurate reverse logistics that gets returned stock back into sellable inventory quickly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container about-grid">
+    <div>
+      <h2 data-i18n="about.title">Family-Run Since 1978</h2>
+      <p data-i18n="about.p1">Ali Family Logistics started with one leased warehouse and a handshake. Nearly five decades later, we're still owned and run by the same family, now in its third generation.</p>
+      <p data-i18n="about.p2">That matters to our clients because decisions here are made by people who answer their own phones, not a call center. We grew slowly, on purpose, so we'd never outgrow that.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><span class="stat-num" data-num="47">47</span><span data-i18n="about.stats.years">Years in Business</span></div>
+      <div class="stat"><span class="stat-num" data-num="320000">320,000</span><span data-i18n="about.stats.sqft">Sq. Ft. of Warehouse Space</span></div>
+      <div class="stat"><span class="stat-num" data-num="850000">850,000</span><span data-i18n="about.stats.shipments">Shipments Handled Yearly</span></div>
+      <div class="stat"><span class="stat-num" data-num="98">98</span>%<span data-i18n="about.stats.ontime">On-Time Delivery</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 data-i18n="contact.title">Get In Touch</h2>
+    <form id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name" data-i18n="contact.form.name">Full Name</label>
+        <input type="text" id="name" name="name" data-i18n-placeholder="contact.form.namePlaceholder">
+        <span class="error" data-error-for="name"></span>
+      </div>
+      <div class="form-row">
+        <label for="email" data-i18n="contact.form.email">Email Address</label>
+        <input type="email" id="email" name="email" data-i18n-placeholder="contact.form.emailPlaceholder">
+        <span class="error" data-error-for="email"></span>
+      </div>
+      <div class="form-row">
+        <label for="company" data-i18n="contact.form.company">Company</label>
+        <input type="text" id="company" name="company">
+      </div>
+      <div class="form-row">
+        <label for="message" data-i18n="contact.form.message">How can we help?</label>
+        <textarea id="message" name="message" rows="4" data-i18n-placeholder="contact.form.messagePlaceholder"></textarea>
+        <span class="error" data-error-for="message"></span>
+      </div>
+      <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Send Message</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Ali Family Logistics. <span data-i18n="footer.rights">All rights reserved.</span></p>
+  </div>
+</footer>
+
+<script src="translations.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
